@@ -1,0 +1,55 @@
+/* Custom overrides for Lab 9 */
+/* -------------------------- */
+
+/* Typography overrides */
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #060606ee;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.75rem;
+}
+/* Interactive elements */
+a:hover {
+  color: #ff6600 !important;
+}
+
+.btn:hover {
+  background-color: #ff6600 !important;
+  color: white !important;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+/* Spacing system */
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.card, .portfolio-card {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 18px rgba(0,0,0,0.07);
+}
+/* Navbar restyle */
+.header {
+  background: #ffffffee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+/* Portfolio card redesign */
+.portfolio-card {
+  border-radius: 14px;
+  overflow: hidden;
+}
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
