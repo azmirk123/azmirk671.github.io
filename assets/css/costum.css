@@ -5,9 +5,6 @@
 /* ------------------------------
    1. TYPOGRAPHY SYSTEM (Required)
    ------------------------------ */
-body {
-  background: red !important;
-}
 
 h1, h2, h3 {
   font-family: "Poppins", sans-serif !important;
