@@ -12,6 +12,12 @@ h1, h2, h3 {
   letter-spacing: 1px !important;
   color: #222 !important;
 }
+h2 {
+  font-size: 3rem !important;
+  color: #9b5e36 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 40px !important;
+}
 
 p {
   font-size: 1.05rem !important;
@@ -120,8 +126,8 @@ ol.custom-olist {
 ul.custom-list li {
   position: relative;
   list-style: none;
-  padding-left: 28px;
-  margin-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 5px;
   font-size: 1.05rem;
 }
 
@@ -150,7 +156,7 @@ ol.custom-olist {
 ol.custom-olist li {
   list-style: none;
   counter-increment: item;
-  padding-left: 32px;
+  padding-left: 10px;
   margin-bottom: 10px;
   position: relative;
   font-size: 1.05rem;
@@ -179,7 +185,7 @@ ol.custom-olist li::before {
    ----------------------------------------- */
 
 table.custom-table {
-  width: 100%;
+  width: 75%;
   border-collapse: collapse;
   font-size: 1rem;
   margin-top: 20px;
