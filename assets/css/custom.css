@@ -46,8 +46,8 @@ a:hover {
    Apply consistent spacing across multiple sections
    ------------------------------ */
 section {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
 }
 
 
