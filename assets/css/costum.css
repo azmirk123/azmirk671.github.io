@@ -45,13 +45,10 @@ a:hover {
    Apply consistent spacing across multiple sections
    ------------------------------ */
 section {
-  padding-top: 90px !important;
-  padding-bottom: 90px !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
 
-.container {
-  margin-bottom: 40px !important;
-}
 
 .card, .portfolio-card {
   padding: 20px !important;
