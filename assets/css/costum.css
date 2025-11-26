@@ -6,6 +6,10 @@
    1. TYPOGRAPHY SYSTEM (Required)
    ------------------------------ */
 
+body {
+  background: yellow !important;
+}
+
 h1, h2, h3 {
   font-family: "Poppins", sans-serif !important;
   font-weight: 700 !important;
