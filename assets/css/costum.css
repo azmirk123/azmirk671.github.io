@@ -5,6 +5,9 @@
 /* ------------------------------
    1. TYPOGRAPHY SYSTEM (Required)
    ------------------------------ */
+body {
+  background: yellow !important;
+}
 
 body {
   background: yellow !important;
