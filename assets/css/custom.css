@@ -48,8 +48,6 @@ section {
   }
 }
 
-
-
   /* 1.*/
 
 h1, h2, h3 {
@@ -213,7 +211,7 @@ table.custom-table thead th {
   text-align: left;
   font-weight: 600;
 }
-* Zebra stripes */
+/* Zebra stripes */
 table.custom-table tbody tr:nth-child(even) {
   background: #f7f2ed;
 }
