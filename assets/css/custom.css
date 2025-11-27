@@ -1,10 +1,7 @@
-/* =========================================================
-   LAB 9 — Custom Overrides (assets/css/custom.css)
-   ========================================================= */
 
-/* ------------------------------
-   1. TYPOGRAPHY SYSTEM (Required)
-   ------------------------------ */
+
+
+  /* 1.*/
 
 h1, h2, h3 {
   font-family: "Poppins", sans-serif !important;
@@ -18,10 +15,7 @@ p {
   line-height: 1.8rem !important;
   color: #333 !important;
 }
-
-/* ------------------------------
-   2. INTERACTIVE ELEMENTS (Required)
-   ------------------------------ */
+/* 2. */
 a {
   transition: 0.2s ease;
 }
@@ -40,11 +34,7 @@ a:hover {
   color: #fff !important;
   transform: scale(1.05);
 }
-
-/* ------------------------------
-   3. SPACING SCALE (Required)
-   Apply consistent spacing across multiple sections
-   ------------------------------ */
+/* 3. */
 .section-padding {
   padding-top: 90px !important;
   padding-bottom: 90px !important;
@@ -57,10 +47,7 @@ a:hover {
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.07) !important;
 }
 
-/* ------------------------------
-   4. COMPONENT RESTYLE #1
-      NAVBAR APPEARANCE ONLY
-   ------------------------------ */
+/* 4. */
 .header {
   background: #ffffffee !important;
   backdrop-filter: blur(6px) !important;
@@ -75,10 +62,7 @@ a:hover {
   color: #9b5e36 !important;
 }
 
-/* ------------------------------
-   5. COMPONENT RESTYLE #2
-      PORTFOLIO CARDS APPEARANCE ONLY
-   ------------------------------ */
+
 .portfolio-card {
   border-radius: 14px !important;
   overflow: hidden !important;
@@ -100,23 +84,13 @@ a:hover {
   color: #9b5e36 !important;
   font-weight: 500 !important;
 }
-
-/* =========================================================
-   OPTIONAL TASK — Styled Lists & Tables (4 pts)
-   ========================================================= */
-
-/* -----------------------------------------
-   6. STYLED LISTS WITH PSEUDO-ELEMENTS (2 pts)
-   ----------------------------------------- */
-
-/* Reset default list styles */
+/* 5. */
 ul.custom-list,
 ol.custom-olist {
   margin-left: 0;
   padding-left: 0;
 }
 
-/* ---------- UNORDERED LIST (bullets) ---------- */
 ul.custom-list li {
   position: relative;
   list-style: none;
@@ -125,7 +99,6 @@ ul.custom-list li {
   font-size: 1.05rem;
 }
 
-/* Custom bullet circle */
 ul.custom-list li::before {
   content: "";
   position: absolute;
@@ -137,12 +110,10 @@ ul.custom-list li::before {
   border-radius: 50%;
 }
 
-/* Nested list inside */
 ul.custom-list ul li::before {
   background: #ff6600;
 }
 
-/* ---------- ORDERED LIST (with counter) ---------- */
 ol.custom-olist {
   counter-reset: item;
 }
@@ -156,7 +127,6 @@ ol.custom-olist li {
   font-size: 1.05rem;
 }
 
-/* Number bubble */
 ol.custom-olist li::before {
   content: counter(item);
   position: absolute;
@@ -174,9 +144,7 @@ ol.custom-olist li::before {
   font-weight: 600;
 }
 
-/* -----------------------------------------
-   7. TABLE / DATA BLOCK STYLING (2 pts)
-   ----------------------------------------- */
+/* 6.  */
 
 table.custom-table {
   width: 100%;
@@ -186,7 +154,6 @@ table.custom-table {
   background: #fff;
 }
 
-/* Header style */
 table.custom-table thead {
   background: #9b5e36;
   color: #fff;
@@ -197,25 +164,21 @@ table.custom-table thead th {
   text-align: left;
   font-weight: 600;
 }
-
-/* Zebra stripes */
+* Zebra stripes */
 table.custom-table tbody tr:nth-child(even) {
   background: #f7f2ed;
 }
 
-/* Row hover */
 table.custom-table tbody tr:hover {
   background: #f1e4d8;
   transition: 0.2s ease-in-out;
 }
 
-/* Table cells */
 table.custom-table td {
   padding: 12px;
   color: #333;
 }
 
-/* Align numbers right */
 table.custom-table .num {
   text-align: right;
 }
