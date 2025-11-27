@@ -45,9 +45,9 @@ a:hover {
    3. SPACING SCALE (Required)
    Apply consistent spacing across multiple sections
    ------------------------------ */
-section {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
+.section-padding {
+  padding-top: 90px !important;
+  padding-bottom: 90px !important;
 }
 
 
@@ -179,7 +179,7 @@ ol.custom-olist li::before {
    ----------------------------------------- */
 
 table.custom-table {
-  width: 75%;
+  width: 100%;
   border-collapse: collapse;
   font-size: 1rem;
   margin-top: 20px;
