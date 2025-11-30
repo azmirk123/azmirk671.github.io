@@ -1,7 +1,3 @@
-/* =========================================
-   LAB 10 — CSS Animations
-   ========================================= */
-
 /* 1. Fade-in Up Animation for Sections */
 @keyframes fadeUp {
   0% {
@@ -229,26 +225,7 @@ table.custom-table td {
 table.custom-table .num {
   text-align: right;
 }
-/* =========================================================
-   OPTIONAL — Animated Gradient Background
-   ========================================================= */
 
-.animated-bg {
-  background: linear-gradient(120deg, #9b5e36, #ff6600, #f3c9a9);
-  background-size: 300% 300%;
-  animation: gradientShift 8s ease infinite;
-  color: white;
-}
-
-/* Keyframes for gradient motion */
-@keyframes gradientShift {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-/* ============================
-   LAB 10 — CSS Loader
-   ============================ */
 #loader {
   position: fixed;
   top: 0;
@@ -274,4 +251,64 @@ table.custom-table .num {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+.animated-gradient {
+  background: linear-gradient(135deg, #d4c8c0, #5e4534, #ea8233);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Smooth scale + glow on cards */
+.card:hover,
+.portfolio-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18) !important;
+  transition: 0.35s ease;
+}
+
+/* Subtle underline grow for links */
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+
+.shape {
+  position: absolute;
+  background: rgba(255, 102, 0, 0.25);
+  border-radius: 50%;
+  animation: floatShape 8s ease-in-out infinite;
+  z-index: -1;
+}
+
+.shape.small {
+  width: 30px;
+  height: 30px;
+  animation-duration: 9s;
+}
+
+.shape.medium {
+  width: 55px;
+  height: 55px;
+  animation-duration: 11s;
+}
+
+.shape.large {
+  width: 90px;
+  height: 90px;
+  animation-duration: 13s;
+}
+
+@keyframes floatShape {
+  0%   { transform: translateY(0) translateX(0); opacity: 0.4; }
+  50%  { transform: translateY(-35px) translateX(20px); opacity: 0.9; }
+  100% { transform: translateY(0) translateX(0); opacity: 0.4; }
 }
