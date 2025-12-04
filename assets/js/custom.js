@@ -76,7 +76,7 @@ resultBox.innerHTML = `
     Phone: ${phoneVal}<br>
     Address: ${addressVal}<br><br>
 
-    <strong>Average Rating:</strong> 
+    <strong>${firstName} ${lastName}:</strong>  
     <span id="avgValue">${avg.toFixed(2)}</span>
 `;
 
@@ -90,7 +90,6 @@ if (avg < 4) {
 } else {
     avgSpan.style.color = "green";
 }
-
 
   showPopup();
 });
