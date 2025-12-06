@@ -77,6 +77,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
+          <li><a href="#memory-game">Memory Game</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -887,6 +888,56 @@
       </div>
 
     </section><!-- /Faq Section -->
+    <!-- ===== MEMORY GAME SECTION (LAB 12) ===== -->
+    <section id="memory-game" class="section light-background">
+      <div class="container" data-aos="fade-up">
+
+        <!-- Section title -->
+        <div class="section-title">
+          <h2>Memory Game</h2>
+          <p>Flip the cards and find all matching pairs. Choose a difficulty and challenge yourself!</p>
+        </div>
+
+        <!-- Controls + stats -->
+        <div class="row mb-4 align-items-center">
+          <div class="col-lg-4 mb-3">
+            <label for="difficultySelect" class="form-label fw-semibold">Difficulty:</label>
+            <select id="difficultySelect" class="form-select">
+              <option value="easy">Easy </option>
+              <option value="hard">Hard </option>
+            </select>
+          </div>
+
+          <div class="col-lg-4 mb-3 text-lg-center">
+            <button id="startGameBtn" class="btn btn-primary me-2">Start</button>
+            <button id="restartGameBtn" class="btn btn-outline-secondary">Restart</button>
+          </div>
+
+          <div class="col-lg-4 mb-3">
+            <div class="memory-stats card p-3">
+              <div><strong>Moves:</strong> <span id="movesCount">0</span></div>
+              <div><strong>Matches:</strong> <span id="matchesCount">0</span> / <span id="totalPairs">0</span></div>
+              <div><strong>Best Score:</strong> <span id="bestScore">—</span></div>
+              <div><strong>Time:</strong> <span id="timerDisplay">00:00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game board -->
+        <div class="memory-board-wrapper">
+          <div id="memoryBoard" class="memory-grid memory-grid-easy">
+            <!-- Cards will be generated here by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Win message -->
+        <div id="winMessage" class="alert alert-success mt-4 d-none" role="alert">
+          🎉 Congratulations! You matched all pairs!
+        </div>
+
+      </div>
+    </section>
+    <!-- ===== END MEMORY GAME SECTION ===== -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
