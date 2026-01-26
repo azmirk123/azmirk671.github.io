@@ -1,6 +1,6 @@
 /* Grocery Store Ticket Queue – 3 Counters, Automatic Handling */
 
-const SERVICE_TIME_MS = 15000; // 15 seconds per customer
+const SERVICE_TIME_MS = 30000; // 30 seconds per customer
 
 // DOM references
 const getTicketBtn = document.getElementById("getTicketBtn");
