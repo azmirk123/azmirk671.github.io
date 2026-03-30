@@ -451,3 +451,61 @@ a:hover {
   font-weight: 600;
   color: #2e7d32;
 }
+
+/* Skills Section */
+.skill-box {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.skill-box h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.skill-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e8845a;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.skill-box p {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.skill-box .progress {
+  height: 6px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  margin: 0;
+}
+
+.skill-box .progress-bar {
+  background-color: #e8845a;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
